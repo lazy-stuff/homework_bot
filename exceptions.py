@@ -10,37 +10,37 @@ class StatusCodeException(Exception):
     pass
 
 
-class ResponseTypeNotDictException(Exception):
+class ResponseTypeNotDictException(TypeError):
     """Исключение для проверки типа данных: словарь."""
 
     pass
 
 
-class HomeworksKeyError(Exception):
+class HomeworksKeyError(KeyError):
     """Исключение для проверки ключа: homeworks."""
 
     pass
 
 
-class DateKeyError(Exception):
+class DateKeyError(KeyError):
     """Исключение для проверки ключа: current_date."""
 
     pass
 
 
-class HomeworksTypeNotListException(Exception):
+class HomeworksTypeNotListException(TypeError):
     """Исключение для проверки типа данных: список."""
 
     pass
 
 
-class StatusKeyError(Exception):
+class StatusKeyError(KeyError):
     """Исключение для проверки ключа: status."""
 
     pass
 
 
-class HwNameKeyError(Exception):
+class HwNameKeyError(KeyError):
     """Исключение для проверки ключа: homework_name."""
 
     pass

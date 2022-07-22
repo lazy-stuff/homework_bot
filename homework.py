@@ -84,11 +84,11 @@ def check_response(response):
         message = 'В ответе отсутствуют ключ "homeworks".'
         logger.error(message)
         raise HomeworksKeyError(message)
-    homeworks_list = response['homeworks']
     if 'current_date' not in response:
         message = 'В ответе отсутствуют ключ "current_date".'
         logger.error(message)
         raise DateKeyError(message)
+    homeworks_list = response['homeworks']
     if not isinstance(homeworks_list, list):
         message = 'Ответ не соответствует типу данных: список.'
         logger.error(message)
