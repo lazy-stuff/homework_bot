@@ -50,9 +50,3 @@ class ExistingStatusError(Exception):
     """Исключение для проверки ключей в словаре HOMEWORK_STATUSES."""
 
     pass
-
-
-class EnvironMissingError(Exception):
-    """Ошибка: отсутствие переменных окружения."""
-
-    pass
